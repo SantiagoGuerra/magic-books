@@ -6,7 +6,21 @@ function BookList() {
   const books = useSelector(state => state);
   return (
     <table>
-      {
+      <thead>
+        <tr>
+          <th>
+            Title
+          </th>
+          <th>
+            Category
+          </th>
+          <th>
+            Author
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {
       books.map(({
         title, category, author, id,
       }) => (
@@ -19,6 +33,8 @@ function BookList() {
         />
       ))
 }
+      </tbody>
+
     </table>
   );
 }

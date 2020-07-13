@@ -6,7 +6,7 @@ const App = () => (
   <div>
     hola
     <BookList />
-    <BookForm />
+    {/* <BookForm /> */}
   </div>
 );
 

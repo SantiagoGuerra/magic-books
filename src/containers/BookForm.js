@@ -8,13 +8,18 @@ class BookForm extends React.Component {
       category: '',
       author: '',
     };
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(e) {
+
   }
 
   render() {
     const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
     return (
-      <form>
+      <form onChange={this.handleChange}>
         <input name="title" placeholder="Title:" />
         <input name="author" placeholder="Author:" />
         <select name="category" id="category">

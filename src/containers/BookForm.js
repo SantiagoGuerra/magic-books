@@ -12,23 +12,31 @@ class BookForm extends React.Component {
   }
 
   handleChange(e) {
+    e.preventDefault();
 
+    const { name, value } = e.target;
+
+    this.setState({
+      [name]: value,
+    });
   }
 
   render() {
     const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
+    const { title, category, author } = this.state;
+
     return (
-      <form onChange={this.handleChange}>
-        <input name="title" placeholder="Title:" />
-        <input name="author" placeholder="Author:" />
-        <select name="category" id="category">
-          {categories.map(category => (
+      <form>
+        <input name="title" placeholder="Title:" value={title} onChange={this.handleChange} />
+        <input name="author" placeholder="Author:" value={author} onChange={this.handleChange} />
+        <select name="category" id="category" value={category} onChange={this.handleChange}>
+          {categories.map(categ => (
             <option
-              value={category.toLowerCase()}
+              value={categ.toLowerCase()}
               key={Math.floor(Math.random() * 1040)}
             >
-              {category}
+              {categ}
             </option>
           ))}
         </select>

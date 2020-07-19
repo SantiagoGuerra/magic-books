@@ -1,68 +1,172 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!--
+*** Thanks for checking out this README Template. If you have a suggestion that would
+*** make this better, please fork the repo and create a pull request or simply open
+*** an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <!-- <a href="https://github.com/SantiagoGuerra/magic-books">
+    <img src="readme-assets/Icon-murple.png" alt="Logo" width="80" height="80">
+  </a> -->
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <h3 align="center">Magic Books</h3>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+  <p align="center">
+    A Content Managment System for books
+    <br />
+    <a href="https://github.com/SantiagoGuerra/magic-books"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/SantiagoGuerra/magic-books">View Demo</a>
+    ·
+    <a href="https://github.com/SantiagoGuerra/magic-books/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/SantiagoGuerra/magic-books/issues">Request Feature</a>
+  </p>
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- [![Product Name Screen Shot][product-screenshot]](#) -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can create, read and delete books from your browser in real-time.
 
-### Code Splitting
+This project was developed for educational purposes but its features are completely functional.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Built With
+* npm
+* JavaScript
+* HTML
+* React
+* Redux
+* React Redux
+* Hooks API
+* Create React App Starter
+* [More Information about dependences](https://github.com/SantiagoGuerra/weather/blob/development/package.json)
+  
 
-### Analyzing the Bundle Size
+<!-- GETTING STARTED -->
+## Getting Started
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-### Making a Progressive Web App
+### Prerequisites
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+```sh
+npm install npm@latest -g
+```
 
-### Advanced Configuration
+### Installation
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+1. Clone the repo
+```sh
+git clone https:://github.com/SantiagoGuerra/magic-books.git
+```
+2. Install NPM packages
+```sh
+npm install
+```
+3. Run the server
+```sh
+npm start
+```
+4. Enjoy!
 
-### Deployment
+<!-- CONTRIBUTING -->
+## Contributing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### `yarn build` fails to minify
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+<!-- CONTACT -->
+## Contact
+
+Santiago Guerra - [@dedalo_g](https://twitter.com/dedalo_g) - guerrasantiago19@gmail.com
+
+Project Link: [https://github.com/santiagoguerra/magic-books](https://github.com/santiagoguerra/magic-books)
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [Microverse](https://www.microverse.org/)
+* [The Odin Project](https://theodinproject.com/)
+
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/SantiagoGuerra/magic-books.svg?style=flat-square
+[contributors-url]: https://github.com/SantiagoGuerra/magic-books/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/SantiagoGuerra/magic-books.svg?style=flat-square
+[forks-url]: https://github.com/SantiagoGuerra/magic-books/network/members
+[stars-shield]: https://img.shields.io/github/stars/SantiagoGuerra/magic-books.svg?style=flat-square
+[stars-url]: https://github.com/SantiagoGuerra/magic-books/stargazers
+[issues-shield]: https://img.shields.io/github/issues/SantiagoGuerra/magic-books.svg?style=flat-square
+[issues-url]: https://github.com/SantiagoGuerra/magic-books/issues
+[license-shield]: https://img.shields.io/github/license/SantiagoGuerra/magic-books.svg?style=flat-square
+[license-url]: https://github.com/SantiagoGuerra/magic-books/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/santiago--guerra/
+[product-screenshot]: readme-assets/screengif.gif

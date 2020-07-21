@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import App from './components/App';
 import booksReducer from './reducers/books';
+import filterReducer from './reducers/filter';
 
-const store = createStore(booksReducer);
+const store = createStore(combineReducers({ books: booksReducer, filter: filterReducer }));
 
 ReactDOM.render(
   <Provider store={store}>

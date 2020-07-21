@@ -25,6 +25,7 @@ const initialState = {
       id: Math.floor(Math.random() * 1040),
     },
   ],
+  filter: 'All',
 };
 
 export default initialState;

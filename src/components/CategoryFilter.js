@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
+import propTypes from 'prop-types';
+import { useSelector } from 'react-redux';
+import { changeFilter } from '../actions';
 
-function CategoryFilter() {
+function CategoryFilter({ handleFilterChange }) {
+  const filter = useSelector(state => state.filter);
+  const [select, changeSelect] = useState(filter);
+
   const filterCategories = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
+  const onChangeSelect = e => {
+    const { value } = e.target;
+
+    changeSelect(value);
+
+    handleFilterChange(changeFilter(value));
+  };
+
   return (
-    <select>
+    <select
+      name="categoryFilter"
+      id="categoryFilter"
+      value={select}
+      onChange={onChangeSelect}
+    >
       {filterCategories.map(categ => (
         <option
           value={categ.toLowerCase()}
@@ -16,5 +35,9 @@ function CategoryFilter() {
     </select>
   );
 }
+
+CategoryFilter.propTypes = {
+  handleFilterChange: propTypes.func.isRequired,
+};
 
 export default CategoryFilter;

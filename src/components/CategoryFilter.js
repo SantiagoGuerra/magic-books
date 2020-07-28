@@ -21,11 +21,14 @@ function CategoryFilter({ handleFilterChange }) {
     <select
       name="categoryFilter"
       id="categoryFilter"
-      value={select}
+      value={'categories' || select }
       onChange={onChangeSelect}
+      className="list-nav__item"
     >
+      <option selected="selected" value="categories">Categories</option>
       {filterCategories.map(categ => (
         <option
+          className="list-nav__item"
           value={categ.toLowerCase()}
           key={Math.floor(Math.random() * 10040)}
         >

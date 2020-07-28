@@ -1,6 +1,6 @@
 .form {
   margin-top: 40px;
-  border-top: .5px solid var(--light-color);
+  border-top: 0.5px solid var(--light-color);
   margin-bottom: 120px;
 
   & > h2 {
@@ -8,15 +8,16 @@
     margin-bottom: 20px;
     font-family: var(--second-font);
     font-size: 20px;
-    color: var(--gray-color)
+    color: var(--gray-color);
   }
 
-  & > input, select {
+  & > input,
+  select {
     background: #fff;
     color: var(--gray-color);
     font-family: var(--second-font);
     font-size: 16px;
-    border: .5px solid var(--light-color);
+    border: 0.5px solid var(--light-color);
     border-radius: 4px;
     width: 30%;
     margin-right: 34px;

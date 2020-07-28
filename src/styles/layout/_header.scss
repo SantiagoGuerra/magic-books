@@ -3,14 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: .5px solid var(--light-color);
+  border-bottom: 0.5px solid var(--light-color);
   background: #fff;
 
   &-wrap {
     display: flex;
     align-items: center;
     width: 50%;
-    
+
     & > .logo {
       margin-right: 50px;
       display: inline-block;
@@ -26,7 +26,9 @@
         display: flex;
         list-style: none;
 
-        & > .list-nav__item, option, select {
+        & > .list-nav__item,
+        option,
+        select {
           margin-right: 40px;
           color: var(--dark-color);
           font-size: var(--font-size-s);
@@ -40,16 +42,14 @@
           align-items: center;
 
           &:hover {
-            color: var(--gray-color)
+            color: var(--gray-color);
           }
 
           &:focus {
             outline: none;
           }
         }
-
       }
-
     }
   }
 }

@@ -21,7 +21,7 @@ function CategoryFilter({ handleFilterChange }) {
     <select
       name="categoryFilter"
       id="categoryFilter"
-      value={'categories' || select }
+      value={'categories' || select}
       onChange={onChangeSelect}
       className="list-nav__item"
     >

@@ -1,16 +1,23 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
-import { removeBook } from "../actions/index";
+import React, { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import { removeBook } from '../actions/index';
 
-const Book = (book) => {
+const Book = book => {
+  const [chapter] = useState(Number(Math.random() * 20).toFixed());
+  const [percentage] = useState(Number((chapter / 20) * 100).toFixed());
+
+  useEffect(() => {
+  }, []);
+
   const dispatch = useDispatch();
-  const handleRemoveBook = (book) => {
+  const handleRemoveBook = book => {
     dispatch(removeBook(book));
   };
 
-  const { title, category, author, id } = book;
-  const percentage = 64;
+  const {
+    title, category, author, id,
+  } = book;
 
   return (
     <tr id={`book-${id}`} className="book">
@@ -51,10 +58,10 @@ const Book = (book) => {
                 rotation: 1,
 
                 // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
-                strokeLinecap: "butt",
+                strokeLinecap: 'butt',
 
                 // Text size
-                textSize: "16px",
+                textSize: '16px',
 
                 // How long animation takes to go from one percentage to another, in seconds
                 pathTransitionDuration: 0.5,
@@ -63,16 +70,19 @@ const Book = (book) => {
                 // pathTransition: 'none',
 
                 // Colors
-                pathColor: `var(--blue-color)`,
-                textColor: "#f88",
-                trailColor: "#d6d6d6",
-                backgroundColor: "#3e98c7",
+                pathColor: 'var(--blue-color)',
+                textColor: '#f88',
+                trailColor: '#d6d6d6',
+                backgroundColor: '#3e98c7',
               })}
             />
           </div>
-          
+
           <div className="chart-values">
-            <span className="book-progress-chart__percentage">64%</span>
+            <span className="book-progress-chart__percentage">
+              {percentage}
+              %
+            </span>
             <span className="book-progress-chart__status">Completed</span>
           </div>
         </div>
@@ -81,7 +91,9 @@ const Book = (book) => {
           <div className="book-progress-info">
             <span className="book-progress-info__title">CURRENT CHAPTER</span>
             <span className="book-progress-info__current-chapter">
-              Chapter 17
+              Chapter
+              {' '}
+              {chapter}
             </span>
           </div>
 

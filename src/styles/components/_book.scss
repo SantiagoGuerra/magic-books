@@ -4,7 +4,7 @@ table {
 }
 
 tbody {
-  width: 100%;;
+  width: 100%;
 }
 
 .book {
@@ -34,7 +34,7 @@ tbody {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    
+
     &-category {
       font-family: var(--second-font);
       font-size: 14px;
@@ -62,7 +62,7 @@ tbody {
       font-weight: 300;
       color: var(--alt-blue-color);
       text-transform: capitalize;
-      margin-top: 8px
+      margin-top: 8px;
     }
   }
 
@@ -80,7 +80,7 @@ tbody {
         font-size: 13px;
         font-weight: 300;
         color: var(--gray-color);
-        text-transform: capitalize; 
+        text-transform: capitalize;
       }
 
       &__current-chapter {
@@ -88,7 +88,7 @@ tbody {
         font-size: 13px;
         font-weight: 300;
         color: var(--dark-color);
-        text-transform: capitalize; 
+        text-transform: capitalize;
         margin-top: 8px;
         margin-bottom: 24px;
       }
@@ -138,13 +138,14 @@ tbody {
   }
 }
 
-.btn-update-progress, .btn-add-book {
+.btn-update-progress,
+.btn-add-book {
   background: var(--blue-color);
   font-family: var(--main-font);
   font-size: 14px;
   font-weight: 300;
-  color: #FFF;
-  text-transform: capitalize; 
+  color: #fff;
+  text-transform: capitalize;
   display: inline-block;
   width: 190px;
   height: 34px;
@@ -157,12 +158,15 @@ tbody {
 .CircularProgressbar-path {
   stroke: red;
 }
+
 .CircularProgressbar-trail {
   stroke: gray;
 }
+
 .CircularProgressbar-text {
   fill: yellow;
 }
+
 .CircularProgressbar-background {
   fill: green;
 }
@@ -171,6 +175,6 @@ tbody {
   display: flex;
   flex-direction: column;
   margin-left: 18px;
-  border-right: .5px solid var(--light-color);
+  border-right: 0.5px solid var(--light-color);
   padding-right: 80px;
 }

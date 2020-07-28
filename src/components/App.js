@@ -1,16 +1,15 @@
 import React from 'react';
-import {useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
 import BookList from '../containers/BookList';
 import BookForm from '../containers/BookForm';
 import CategoryFilter from './CategoryFilter';
 
-const App = () =>  { 
+const App = () => {
   const handleFilterChange = useDispatch();
-  
 
   return (
     <div>
-  
+
       <header className="header">
         <div className="container">
           <div className="header-wrap">
@@ -22,7 +21,7 @@ const App = () =>  {
                 <li className="list-nav__item">
                   BOOKS
                 </li>
-  
+
                 <li className="list-nav__item">
                   <CategoryFilter handleFilterChange={handleFilterChange} />
                 </li>
@@ -30,13 +29,13 @@ const App = () =>  {
             </nav>
           </div>
         </div>
-  
+
         <div className="avatar" />
       </header>
       <BookList />
       <BookForm />
     </div>
   );
-}
+};
 
 export default App;

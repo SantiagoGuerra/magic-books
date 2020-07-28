@@ -11,25 +11,10 @@ function BookList() {
   return (
     <>
       <CategoryFilter handleFilterChange={handleFilterChange} />
-      <table>
-        <thead>
-          <tr>
-            <th>
-              Title
-            </th>
-            <th>
-              Category
-            </th>
-            <th>
-              Author
-            </th>
-            <th>
-              Action
-            </th>
-          </tr>
-        </thead>
+      <div className="container">
+        <table>
         <tbody>
-          {
+        {
         books.filter(book => filter === 'all' || book.category === filter)
           .map(({
             title, category, author, id,
@@ -44,8 +29,11 @@ function BookList() {
           ))
   }
         </tbody>
+          
 
-      </table>
+        </table>
+      </div>
+
     </>
   );
 }

@@ -1,0 +1,180 @@
+table {
+  width: 100%;
+  margin-top: 37px;
+}
+
+tbody {
+  width: 100%;
+}
+
+.book {
+  width: 100%;
+  display: inline-flex;
+  height: 170px;
+  background: #fff;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 0.2px solid var(--light-color);
+
+  &-container {
+    display: flex;
+    padding: 32px 27px;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+
+  &-desc {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    &-category {
+      font-family: var(--second-font);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--gray-color);
+      text-transform: capitalize;
+      margin-bottom: 4px;
+    }
+
+    &-title {
+      font-family: var(--main-font);
+      font-size: var(--font-size-l);
+      font-weight: 600;
+      color: var(--dark-color);
+      text-transform: capitalize;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 500px;
+    }
+
+    &-author {
+      font-family: var(--main-font);
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--alt-blue-color);
+      text-transform: capitalize;
+      margin-top: 8px;
+    }
+  }
+
+  &-progress {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+
+      &__title {
+        font-family: var(--main-font);
+        font-size: 13px;
+        font-weight: 300;
+        color: var(--gray-color);
+        text-transform: capitalize;
+      }
+
+      &__current-chapter {
+        font-family: var(--main-font);
+        font-size: 13px;
+        font-weight: 300;
+        color: var(--dark-color);
+        text-transform: capitalize;
+        margin-top: 8px;
+        margin-bottom: 24px;
+      }
+    }
+
+    &-chart {
+      position: absolute;
+      top: calc(50% - 27.5px);
+      left: calc(50% - 27.5px);
+      display: flex;
+
+      &__percentage {
+        font-family: var(--second-font);
+        font-size: 32px;
+        color: var(--dark-color);
+        text-transform: capitalize;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 500px;
+      }
+
+      &__status {
+        font-family: var(--second-font);
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--gray-color);
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.btn-book-action {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--alt-blue-color);
+  text-transform: capitalize;
+  margin-right: 34px;
+  cursor: pointer;
+  border: none;
+  background: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-update-progress,
+.btn-add-book {
+  background: var(--blue-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: capitalize;
+  display: inline-block;
+  width: 190px;
+  height: 34px;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.CircularProgressbar-path {
+  stroke: red;
+}
+
+.CircularProgressbar-trail {
+  stroke: gray;
+}
+
+.CircularProgressbar-text {
+  fill: yellow;
+}
+
+.CircularProgressbar-background {
+  fill: green;
+}
+
+.chart-values {
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+  border-right: 0.5px solid var(--light-color);
+  padding-right: 80px;
+}

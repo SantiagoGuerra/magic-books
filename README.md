@@ -70,7 +70,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<!-- [![Product Name Screen Shot][product-screenshot]](#) -->
+[![Product Name Screen Shot][product-screenshot]](#)
 
 You can create, read and delete books from your browser in real-time.
 
@@ -169,4 +169,4 @@ Project Link: [https://github.com/santiagoguerra/magic-books](https://github.com
 [license-url]: https://github.com/SantiagoGuerra/magic-books/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/santiago--guerra/
-[product-screenshot]: readme-assets/screengif.gif
+[product-screenshot]: readme-assets/screenshot.png
